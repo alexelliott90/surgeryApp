@@ -5,7 +5,7 @@ const Login = require('../models/loginModel')
 function checkJWTToken(req, res, next) {
     if (req.headers.token) {
         let token = req.headers.token;
-        jwt.verify(token, process.env.TOKEN_KEY, function (error, data) {
+        jwt.verify(token, "S3KR3TQUAY", function (error, data) {
             if (error) {
                 res.send({ message: "Invalid Token" });
             } else {
@@ -24,7 +24,7 @@ function checkJWTToken(req, res, next) {
 function checkAdmin(req, res, next) {
         const token = req.headers.token
         try {
-            const decoded = jwt.verify(token, process.env.TOKEN_KEY)
+            const decoded = jwt.verify(token, "S3KR3TQUAY")
         if (decoded.admin){
             next()
         }else{

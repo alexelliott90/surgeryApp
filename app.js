@@ -46,7 +46,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 //connnect to mongo appointments database. Password stored in .env file to stop exposing password in github etc.
-mongoose.connect(`mongodb+srv://alexelliott90:${process.env.MONGOOSE_PWD}@surgerycluster0.fzqmevf.mongodb.net/`, {
+mongoose.connect(`mongodb+srv://alexelliott90:x2q5nveKniKwmlUC@surgerycluster0.fzqmevf.mongodb.net/`, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
