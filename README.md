@@ -119,7 +119,7 @@ To install this app, you will need to set up a MongoDB cluster, and install the 
 
 ## Testing
 
-XXXX
+One snapshot test, and two unit tests to test the front and back end have been included.
 
 ### Security Measures
 
