@@ -51,7 +51,7 @@ exports.checkLogin = (req, res) => {
                   password: tokenPassword,
                   admin: tokenAdmin
                 },
-                  process.env.TOKEN_KEY,
+                "S3KR3TQUAY",
                 { expiresIn: "1h" }
             )
                 res.status(200).send({
